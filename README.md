@@ -25,7 +25,8 @@ I just found one that installs
 Code:
 ```
 sudo apt-get update && sudo apt-get install git dkms
-git clone https://github.com/zebulon2/rtl8814au.git
+dont use this line, but use following line :git clone https://github.com/zebulon2/rtl8814au.git
+git clone https://github.com/su3010/rtl8814au.git
 cd rtl8814au
 gedit dkms.conf
 ```
