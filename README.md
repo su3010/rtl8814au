@@ -23,22 +23,22 @@ This should keep your 8814AU adapter working post kernel updates.
 Moved to networking and wireless
 I just found one that installs
 Code:
-
+```
 sudo apt-get update && sudo apt-get install git dkms
 git clone https://github.com/zebulon2/rtl8814au.git
 cd rtl8814au
 gedit dkms.conf
-
+```
 Replace line 1 MAKE="'make'" with
-Code:
-
+Code
+```
 MAKE="'make' all KVER=${kernelver}"
-
+```
 save and exit gedit, then
 Code:
-
+```
 cd 
 sudo dkms add ./rtl8814au
 sudo dkms install rtl8814au/4.3.21
-
+```
 Reboot
