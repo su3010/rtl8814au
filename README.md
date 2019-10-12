@@ -31,8 +31,9 @@ cd rtl8814au
 gedit dkms.conf
 ```
 Replace line 1 MAKE="'make'" with
-Code
+Code 
 ```
+folloiwng line  is not required. repository has this change.
 MAKE="'make' all KVER=${kernelver}"
 ```
 save and exit gedit, then
